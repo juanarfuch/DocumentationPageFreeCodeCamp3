@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Technical Documentation</title>
+</head> 
+<body> 
+    <nav id="navbar">
+        <header><h1>Python Documentation</h1></header>   
+        <ul class="nav-list">
+            <li class="nav-item"><a href="#Introduction_to_Python" class="nav-link">Introduction to Python</a></li>
+            <li class="nav-item"><a href="#Control_flow_Structures" class="nav-link">Control flow Structures</a></li>
+            <li class="nav-item"><a href="#Functions_and_Modules" class="nav-link">Functions and Modules</a></li>
+            <li class="nav-item"><a href="#Objected-oriented_Programming" class="nav-link">Objected-oriented Programming</a></li>
+            <li class="nav-item"><a href="#Useful_Resources" class="nav-link">Useful Resources</a></li>
+        </ul> 
+    </nav>
+    <main id="main-doc">
+       
+        <section class="main-section" id="Introduction_to_Python">
+            <header><h3>Introduction to Python</h3></header>
+            <p>Python is a high-level, interpreted programming language that is widely used for general-purpose programming. Python is known for its readability, ease of use, and concise syntax. In addition, Python has a large and active community that contributes to the development of libraries and tools.</p>
+                <code>
+                    print("Hello, world!")
+                </code> 
+            <h3 class="sub-headline">Data types and structures:</h3>
+            <p>Python offers a range of built-in data types, including strings, integers, floating-point numbers, and boolean values. Python also provides various built-in data structures, such as lists, tuples, and dictionaries. These data types and structures can be used to store and manipulate data in Python programs.</p>
+            <div class="code-conteiner">
+
+                <code>
+                    texto = "Hello, world!"
+                    numero = 42
+                    flotante = 3.14
+                    verdadero = True
+                    lista = [1, 2, 3]
+                    tupla = (4, 5, 6)
+                    diccionario = {"nombre": "Juan", "edad": 30}
+                </code>
+            </div>     
+        </section>
+        <section class="main-section" id="Control_flow_Structures"> 
+            <header> <h3>Control flow Structures</h3></header>
+            <p>Python offers a range of control flow structures, such as if-else statements, for loops, and while loops.</p>
+            <p>These structures allow Python programs to perform different actions based on certain conditions or to repeat certain actions multiple times.</p>
+                <code>
+                    numero = 10
+                    if numero > 0:
+                        print("El número es positivo")
+                    elif numero < 0:
+                        print("El número es negativo")
+                    else:
+                        print("El número es cero")
+
+                    for i in range(5):
+                        print(i)
+
+                    while numero > 0:
+                        print(numero)
+                        numero -= 1
+                </code>
+        </section>
+        <section class="main-section" id="Functions_and_Modules">
+            <header><h3>Functions and Modules</h3></header>
+            <p>Python allows the creation of functions, which are reusable blocks of code that can be called multiple times with different arguments.</p>
+            <p>Python also allows the creation of modules, which are files containing Python code that can be imported and used in other programs.</p>
+                <code>
+                    # Example of a function and a module
+                    # Function to calculate the area of a rectangle
+                    def area_rectangulo(base, altura):
+                        area = base * altura
+                        return area
+
+                    # Module with constants and functions for math operations
+                    PI = 3.1416
+
+                    def suma(a, b):
+                        return a + b
+
+                    def resta(a, b):
+                        return a - b
+                </code>   
+        </section>
+        <section class="main-section" id="Objected-oriented_Programming">
+            <header><h3>Objected-oriented Programming</h3></header>
+            <p>Python is an object-oriented programming language, which means that it allows the creation of classes and objects. Classes define the behavior and properties of objects, while objects are instances of a class.</p>
+            <p>Python also supports inheritance, which allows classes to inherit properties and methods from other classes.</p>
+            
+                <code>
+                    # Example of a class and an object
+                        class Persona:
+                            def __init__(self, nombre, edad):
+                                self.nombre = nombre
+                                self.edad = edad
+                            
+                            def saludar(self):
+                                print(f"Hola, me llamo {self.nombre}")
+
+                        # Creating an object of the Persona class
+                        juan = Persona("Juan", 30)
+                        juan.saludar()
+                </code>
+        </section>
+
+        <section class="main-section" id="Useful_Resources">
+            <header><h3>Useful Resources</h3></header>
+            <p>Frameworks, libraries, and tools that can make the development process faster and more efficient. Some popular Python web frameworks include Django, Flask, Pyramid, and Bottle. These frameworks offer a range of features and functionalities, such as database integration, security, and template rendering. They also come with large communities, which means that developers can easily find support, documentation, and examples online.</p>
+            <p>In addition to frameworks, Python offers a range of libraries for web development, such as Beautiful Soup, Requests, and Scrapy. These libraries can be used for web scraping, data extraction, and interacting with web APIs. Python also has libraries for front-end development, such as Jinja2 and Flask-Assets, which can be used for templating and asset management. Other useful resources for Python web development include hosting services, such as Heroku and AWS, and deployment tools, such as Fabric and Ansible.</p>
+
+            <h3>Here you have a list of websites that might be useful</h3>
+            <ul class="useful-r">
+                <li><a href=“https://medium.com/geekculture/5-resources-that-will-take-your-python-skills-to-the-next-level-7039a612bf36”>5 Resources That Will Take Your Python Skills To The Next Level</a></li>
+                <li><a href=“https://towardsdatascience.com/top-13-resources-to-learn-python-programming-46f3b0b74b91”>Top 13 Resources to Learn Python Programming</a></li>
+                <li><a href=“https://blog.boot.dev/python/best-python-resources/”>The 12 Most Engaging Resources for Learning Python</a></li>
+                <li><a href=“https://towardsdatascience.com/5-free-resources-to-learn-python-5faa6bd051f4”>5 Free Resources to Learn Python</a></li>
+                <li><a href=“https://www.fullstackpython.com/best-python-resources.html”>Best Python Resources</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
